@@ -1,0 +1,108 @@
+<!-- contact.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Contact Us - Your Product</title>
+    <style>/* styles.css */
+
+        
+        .contact {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 50px;
+            margin: 30px 0;
+        }
+        
+        .contact h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact form label,
+        .contact form textarea,
+        .contact form input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .contact form textarea {
+            resize: vertical;
+        }
+        
+        .contact form button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        .contact form button:hover {
+            background-color: #45a049;
+        }
+        </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><img src="images/638px-Marshall_logo.svg.png" height="80px" width="200px" alt="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <!-- Contact Form -->
+        <form action="submit_form.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <h3>Contact Information</h3>
+        <p>Name: Balvindra Singh</p>
+        <p>Address: Georgian@ilac , Toronto</p>
+        <p>Email: balvindersingh0026@gmail.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+    </footer>
+
+</body>
+
+</html>
